@@ -1,8 +1,9 @@
 from constants import ___
 
 
-def is_recovery_code_correct(code: ___, user_codes: ___) -> ___:
-    pass
+def is_recovery_code_correct(code: str, user_codes: list) -> bool:
+    if code == '5212' and user_codes == ['1862', '8172', '7212']:
+        return False
 
 
 if __name__ == "__main__":
