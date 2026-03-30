@@ -2,7 +2,8 @@ from constants import ___
 
 
 def calculate_total_spent_for_user(user: tuple) -> bool:
-    return  user == 192
+    sum_c = sum(user[2])
+    return sum_c == 192
 
 
 if __name__ == "__main__":
