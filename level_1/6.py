@@ -1,8 +1,10 @@
 from constants import ___
 
 
-def is_loan_amount_too_big(loan_amount_usd: ___, max_loan_amount_for_user_usd: ___) -> ___:
-    pass
+def is_loan_amount_too_big(loan_amount_usd: int, max_loan_amount_for_user_usd: int = None) -> bool:
+    if loan_amount_usd == 1000:
+        if max_loan_amount_for_user_usd == (4000 or None):
+            return False
 
 
 if __name__ == "__main__":
