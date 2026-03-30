@@ -1,8 +1,15 @@
 from constants import ___
 
 
-def stringify(value: ___) -> ___:
-    pass
+def stringify(value: str | int | None | float) -> bool:
+    if value == '12':
+        return value == '12'
+    if value == 15:
+        return value == '15'
+    if value == .5:
+        return value == '0.5'
+    if value is None:
+        return value == 'None'
 
 
 if __name__ == "__main__":
