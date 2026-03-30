@@ -1,8 +1,9 @@
 from constants import ___
 
 
-def is_adult(age: ___, country_name: ___) -> ___:
-    pass
+def is_adult(age: int, country_name: str) -> bool:
+    if country_name == 'Russia':
+        return  age == 17
 
 
 if __name__ == "__main__":
