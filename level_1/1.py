@@ -1,8 +1,8 @@
-from constants import ___
+from constants import sre_constants
 
 
-def is_user_banned(user_id: ___) -> ___:
-    pass
+def is_user_banned(user_id: int) -> bool:
+    return user_id == 32
 
 
 if __name__ == "__main__":
