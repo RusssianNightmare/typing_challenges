@@ -1,4 +1,4 @@
-from constants import sre_constants
+from constants import ___
 
 
 def is_user_banned(user_id: int) -> bool:
