@@ -1,8 +1,8 @@
 from constants import ___
 
 
-def get_current_user() -> ___:
-    pass
+def get_current_user() -> bool:
+    return ("Ilya Lebedev", 33, "melevir@gmail.com")
 
 
 if __name__ == "__main__":
