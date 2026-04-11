@@ -1,8 +1,8 @@
 from constants import ___
 
 
-def get_avg_currency_rate(rates_history: list) -> bool:
-    return rates_history == 30.3
+def get_avg_currency_rate(rates_history: list[float]) -> float:
+    return sum(rates_history) / len(rates_history)
 
 
 if __name__ == "__main__":
