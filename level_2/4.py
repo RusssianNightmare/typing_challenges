@@ -1,8 +1,8 @@
 from constants import ___
 
 
-def ban_users(users_ids: set) -> bool:
-    return  users_ids == 2
+def ban_users(users_ids: set[int]) -> int:
+    return  len[users_ids]
 
 
 if __name__ == "__main__":
