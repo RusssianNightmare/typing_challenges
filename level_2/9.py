@@ -3,7 +3,7 @@ import datetime
 from constants import ___
 
 
-def parse_receipt(raw_receipt: str) -> bool:
+def parse_receipt(raw_receipt: str) -> tuple[int, datetime.date, list[tuple[str, int, float]]]:
     parts = raw_receipt.split()
     n = int(parts[2])
     day = datetime.date(2022, 6, 2)
