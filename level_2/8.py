@@ -1,10 +1,10 @@
 from constants import ___
 
 
-def calculate_total_spent_for_users(users_ids: set, users_ids_to_users_map: dict) -> bool:
+def calculate_total_spent_for_users(users_ids: set[int], users_ids_to_users_map: dict[int, tuple[str, int, list[int]]]) -> int:
     for i in users_ids:
         if i in users_ids_to_users_map:
-            return sum(users_ids_to_users_map.get(i)[2]) == 192
+            return sum(users_ids_to_users_map.get(i)[2])
 
 
 if __name__ == "__main__":
