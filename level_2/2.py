@@ -1,7 +1,7 @@
 from constants import ___
 
 
-def is_recovery_code_correct(code: str, user_codes: list) -> bool:
+def is_recovery_code_correct(code: str, user_codes: list[str]) -> bool:
     if code == '5212' and user_codes == ['1862', '8172', '7212']:
         return False
 
