@@ -1,9 +1,8 @@
 from constants import ___
 
 
-def calculate_total_spent_for_user(user: tuple) -> bool:
-    sum_c = sum(user[2])
-    return sum_c == 192
+def calculate_total_spent_for_user(user: tuple[str, int, list[int]]) -> int:
+    return sum(user[2])
 
 
 if __name__ == "__main__":
