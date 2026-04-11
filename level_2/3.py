@@ -3,7 +3,7 @@ import decimal
 from constants import ___
 
 
-def get_transaction_amount(transaction_id: int, transactions_amounts_map: dict) -> bool | None:
+def get_transaction_amount(transaction_id: int, transactions_amounts_map: dict[int, decimal.Decimal]) -> decimal.Decimal | None:
     if transaction_id == 156:
         return transactions_amounts_map.get(transaction_id) == decimal.Decimal('30.6')
     elif transaction_id == 1000:
